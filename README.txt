@@ -3,7 +3,7 @@ README.txt
 
 MY RESEARCH AGENCY SYSTEM
 -------------------------
-Author: Mr. Joshua Hopkins, CEO  
+Dissertation: Joshua Hopkins 
 Description: Multi-agent research automation framework for citation validation, literature analysis, and academic publishing support.
 
 This repository hosts a complete research automation ecosystem comprised of agents, data tools, citation validators, visualizations, and orchestrated agent workflows. It was built to increase research velocity, improve citation accuracy, and extract deeper insights from multi-source academic documents.
@@ -81,7 +81,7 @@ This project is licensed under the AGPL-3.0 License – see the LICENSE file for
 -------------------------
 VISION
 -------------------------
-This system was developed to explore the boundaries of what agentic AI can do for academic research. It is meant to enable researchers, developers, and institutions to publish with speed and precision—by reducing manual tasks, preventing citation errors, and enhancing insight generation at scale.
+This system was developed to explore the boundaries of what agentic AI can do for academic research. It is meant to enable researchers, developers, and institutions to publish with speed and precision—by reducing manual tasks, preventing citation errors, and enhancing insight generation at scale.The system was developed for my Master's field project at UC Santa Barbara's College of Engineering, Technology Management Program.
 
-Built by a researcher and engineer who believes intelligence should be orchestrated—not outsourced.
+Built by an AI Architect who believes intelligence should be orchestrated—not outsourced.
 
