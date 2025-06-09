@@ -44,7 +44,7 @@ my_research_agency/
 GETTING STARTED
 -------------------------
 1. Clone this repository:
-   git clone https://github.com/your-username/my_research_agency.git
+   git clone https://github.com/jhopkins78/my_research_agency.git
 
 2. Navigate to the agent scripts:
    cd my_research_agency/agents
@@ -63,7 +63,7 @@ KEY AGENTS
 - **Documentation Registry**: Tracks agent behaviors, expected inputs/outputs, and configuration.
 
 -------------------------
-ISUALIZATIONS
+VISUALIZATIONS
 -------------------------
 Visuals in `visualizations/png_output/` illustrate:
 - SMB data challenges
@@ -81,7 +81,7 @@ This project is licensed under the AGPL-3.0 License – see the LICENSE file for
 -------------------------
 VISION
 -------------------------
-This system was developed to explore the boundaries of what agentic AI can do for academic research. It is meant to enable researchers, developers, and institutions to publish with speed and precision—by reducing manual tasks, preventing citation errors, and enhancing insight generation at scale.
+This system was developed to explore the boundaries of what agentic AI can do for academic research. It is meant to enable researchers, developers, and institutions to publish with speed and precision—by reducing manual tasks, preventing citation errors, and enhancing insight generation at scale. The system was developed for my Master's field project at UC Santa Barbara's College of Engineering, Technology Management Program.
 
-Built by a researcher and engineer who believes intelligence should be orchestrated—not outsourced.
+Built by an AI Architect who believes intelligence should be orchestrated—not outsourced.
 
