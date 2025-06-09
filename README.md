@@ -1,9 +1,9 @@
-README.txt
+README.md
 ==========
 
 MY RESEARCH AGENCY SYSTEM
 -------------------------
-Author: Mr. Joshua Hopkins, CEO  
+Developer: Joshua Hopkins  
 Description: Multi-agent research automation framework for citation validation, literature analysis, and academic publishing support.
 
 This repository hosts a complete research automation ecosystem comprised of agents, data tools, citation validators, visualizations, and orchestrated agent workflows. It was built to increase research velocity, improve citation accuracy, and extract deeper insights from multi-source academic documents.
