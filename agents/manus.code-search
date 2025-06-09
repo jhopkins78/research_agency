@@ -1,0 +1,16 @@
+# Query: manus
+# ContextLines: 1
+
+3 results - 3 files
+
+agents/Academic Research Agent System (ARAS).md:
+  154  #### Publishing and Editorial
+  155: - Manuscript citation verification
+  156  - Reference list validation
+
+agents/academic_research_agent_system.py:
+    
+
+agents/pdf_reference_extraction_agent.py:
+  8  
+  

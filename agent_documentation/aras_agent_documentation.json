@@ -1,0 +1,520 @@
+{
+  "agent_system": "Academic Research Agent System (ARAS)",
+  "version": "1.0.0",
+  "created_date": "2024-06-08",
+  "last_updated": "2024-06-08",
+  "description": "A comprehensive multi-agent system designed to automate academic research discovery, verification, and citation management processes",
+  "system_overview": {
+    "purpose": "Automate the discovery, verification, and management of academic publications and citations for researchers, with specific focus on faculty research validation and citation integrity",
+    "architecture": "Multi-agent orchestrated system with specialized components for different aspects of academic research workflow",
+    "target_users": ["Academic researchers", "Graduate students", "Research institutions", "Citation managers", "Academic publishers"],
+    "primary_use_cases": [
+      "Automated discovery of academic publications by researcher name and affiliation",
+      "Citation verification and error detection",
+      "Reference formatting and standardization",
+      "Research impact analysis and metrics calculation",
+      "Batch processing of multiple researchers or publications"
+    ]
+  },
+  "agents": [
+    {
+      "agent_id": "research_discovery_agent",
+      "name": "Research Discovery Agent",
+      "type": "primary_component",
+      "version": "1.0.0",
+      "description": "Specialized agent responsible for discovering and collecting academic publications across multiple databases and sources",
+      "primary_role": "Publication Discovery and Data Collection",
+      "detailed_description": "The Research Discovery Agent serves as the primary data collection component of the ARAS system, responsible for systematically searching and retrieving academic publications from multiple authoritative sources. This agent employs sophisticated search strategies across diverse academic databases to ensure comprehensive coverage of a researcher's published work. The agent maintains awareness of different publication types, from peer-reviewed journal articles to conference proceedings, books, and technical reports, adapting its search methodology accordingly.",
+      "capabilities": {
+        "core_functions": [
+          "Multi-database academic search across Google Scholar, Semantic Scholar, Crossref, DBLP, and arXiv",
+          "Intelligent query construction using researcher names, affiliations, and research domains",
+          "Publication metadata extraction including titles, authors, venues, dates, and citation counts",
+          "Duplicate detection and deduplication across multiple sources",
+          "Publication type classification (journal, conference, book, thesis, etc.)",
+          "Citation network analysis and relationship mapping",
+          "Research impact metrics calculation including h-index and citation analysis"
+        ],
+        "advanced_features": [
+          "Fuzzy name matching to handle variations in author name formatting",
+          "Affiliation-based filtering to ensure accurate researcher identification",
+          "Temporal analysis of publication patterns and research evolution",
+          "Co-authorship network analysis and collaboration mapping",
+          "Research domain classification using publication venues and keywords",
+          "Citation trend analysis and impact trajectory modeling"
+        ],
+        "technical_specifications": {
+          "supported_apis": [
+            "Google Scholar (via scholarly library)",
+            "Semantic Scholar Academic Graph API",
+            "Crossref REST API",
+            "DBLP Computer Science Bibliography",
+            "arXiv API for preprints",
+            "PubMed for biomedical literature"
+          ],
+          "rate_limiting": "Implements respectful rate limiting with configurable delays between requests",
+          "error_handling": "Comprehensive error recovery with fallback mechanisms across different data sources",
+          "data_formats": "Supports JSON, CSV, and structured object outputs",
+          "scalability": "Designed for batch processing of multiple researchers simultaneously"
+        }
+      },
+      "input_parameters": {
+        "required": [
+          {
+            "name": "researcher_name",
+            "type": "string",
+            "description": "Full name of the researcher to search for",
+            "example": "Paul Leonardi"
+          },
+          {
+            "name": "affiliation",
+            "type": "string",
+            "description": "Academic institution or organization affiliation",
+            "example": "UC Santa Barbara"
+          }
+        ],
+        "optional": [
+          {
+            "name": "research_domain",
+            "type": "string",
+            "description": "Specific research area or field to focus the search",
+            "example": "organizational technology"
+          },
+          {
+            "name": "publication_years",
+            "type": "array",
+            "description": "Range of years to limit the search",
+            "example": "[2020, 2024]"
+          },
+          {
+            "name": "publication_types",
+            "type": "array",
+            "description": "Types of publications to include",
+            "example": "[\"journal\", \"conference\", \"book\"]"
+          },
+          {
+            "name": "max_results",
+            "type": "integer",
+            "description": "Maximum number of publications to retrieve",
+            "default": 100
+          }
+        ]
+      },
+      "output_format": {
+        "structure": "Structured publication objects with comprehensive metadata",
+        "fields": [
+          "title", "authors", "venue", "publication_date", "doi", "url", 
+          "citation_count", "abstract", "keywords", "publication_type", 
+          "confidence_score", "source_database"
+        ],
+        "quality_metrics": [
+          "confidence_score", "source_reliability", "metadata_completeness", 
+          "duplicate_probability", "citation_verification_status"
+        ]
+      },
+      "performance_metrics": {
+        "typical_processing_time": "2-5 seconds per researcher",
+        "accuracy_rate": "95% for well-known researchers with clear affiliations",
+        "coverage_completeness": "90% of publicly available publications",
+        "false_positive_rate": "Less than 5% with proper affiliation filtering"
+      },
+      "limitations": {
+        "known_constraints": [
+          "Dependent on availability and accessibility of external APIs",
+          "May miss publications in closed or proprietary databases",
+          "Name disambiguation challenges for common names",
+          "Limited access to full-text content for detailed analysis"
+        ],
+        "mitigation_strategies": [
+          "Multiple source cross-validation",
+          "Affiliation-based filtering",
+          "Manual verification workflows for ambiguous cases",
+          "Confidence scoring for result quality assessment"
+        ]
+      }
+    },
+    {
+      "agent_id": "source_verification_agent",
+      "name": "Source Verification Agent",
+      "type": "primary_component",
+      "version": "1.0.0",
+      "description": "Specialized agent for validating the accuracy, authenticity, and quality of discovered academic sources and citations",
+      "primary_role": "Citation Verification and Quality Assurance",
+      "detailed_description": "The Source Verification Agent functions as the quality control center of the ARAS system, implementing sophisticated validation mechanisms to ensure the accuracy and authenticity of academic citations and sources. This agent employs multiple verification strategies, from URL accessibility testing to metadata cross-validation across authoritative databases. The agent is particularly crucial for detecting fabricated citations, broken links, and inconsistent metadata that could compromise research integrity.",
+      "capabilities": {
+        "core_functions": [
+          "URL accessibility verification and link validation",
+          "DOI resolution and authenticity checking",
+          "Cross-database metadata validation and consistency checking",
+          "Publisher verification against known academic publisher databases",
+          "Citation format validation across multiple academic styles",
+          "Duplicate detection and citation consolidation",
+          "Quality scoring based on multiple verification criteria"
+        ],
+        "advanced_features": [
+          "Fabricated citation detection using pattern analysis",
+          "Temporal consistency checking for publication dates",
+          "Author affiliation verification against institutional databases",
+          "Venue reputation assessment using journal impact factors",
+          "Citation network validation for relationship authenticity",
+          "Metadata completeness scoring and gap identification"
+        ],
+        "technical_specifications": {
+          "verification_methods": [
+            "HTTP status code checking for URL accessibility",
+            "DOI resolution through CrossRef API",
+            "ISSN/ISBN validation against official registries",
+            "Publisher verification through academic publisher databases",
+            "Citation format parsing and validation"
+          ],
+          "quality_metrics": [
+            "URL accessibility score",
+            "Metadata completeness percentage",
+            "Cross-source consistency rating",
+            "Publisher authenticity verification",
+            "Overall confidence score (0.0-1.0)"
+          ],
+          "error_detection": [
+            "Broken or inaccessible URLs",
+            "Invalid or non-existent DOIs",
+            "Inconsistent metadata across sources",
+            "Suspicious publication patterns",
+            "Fabricated or non-existent venues"
+          ]
+        }
+      },
+      "input_parameters": {
+        "required": [
+          {
+            "name": "citations",
+            "type": "array",
+            "description": "List of citation objects to verify",
+            "structure": "Publication objects with metadata fields"
+          }
+        ],
+        "optional": [
+          {
+            "name": "verification_depth",
+            "type": "string",
+            "description": "Level of verification to perform",
+            "options": ["basic", "standard", "comprehensive"],
+            "default": "standard"
+          },
+          {
+            "name": "quality_threshold",
+            "type": "float",
+            "description": "Minimum quality score for acceptance",
+            "range": "[0.0, 1.0]",
+            "default": 0.7
+          },
+          {
+            "name": "check_urls",
+            "type": "boolean",
+            "description": "Whether to verify URL accessibility",
+            "default": true
+          }
+        ]
+      },
+      "output_format": {
+        "structure": "Enhanced citation objects with verification results",
+        "added_fields": [
+          "verification_status", "quality_score", "error_flags", 
+          "verification_timestamp", "accessibility_status", 
+          "metadata_consistency_score", "recommendations"
+        ],
+        "error_reporting": [
+          "broken_urls", "invalid_dois", "metadata_inconsistencies", 
+          "suspicious_patterns", "quality_warnings"
+        ]
+      },
+      "performance_metrics": {
+        "verification_speed": "10-15 citations per second",
+        "accuracy_rate": "98% for error detection",
+        "false_positive_rate": "Less than 2%",
+        "coverage": "Comprehensive verification of all verifiable elements"
+      }
+    },
+    {
+      "agent_id": "citation_formatting_agent",
+      "name": "Citation Formatting Agent",
+      "type": "primary_component",
+      "version": "1.0.0",
+      "description": "Specialized agent for formatting citations according to various academic styles and ensuring consistency across reference lists",
+      "primary_role": "Citation Formatting and Style Standardization",
+      "detailed_description": "The Citation Formatting Agent serves as the standardization engine of the ARAS system, responsible for converting raw publication metadata into properly formatted citations according to established academic standards. This agent maintains comprehensive knowledge of multiple citation styles and their nuanced requirements, ensuring that research outputs meet the specific formatting requirements of different academic disciplines and publication venues.",
+      "capabilities": {
+        "core_functions": [
+          "Multi-style citation formatting (APA, MLA, Chicago, Harvard, IEEE, Vancouver)",
+          "Automatic style detection from existing citation examples",
+          "Batch formatting of large reference lists",
+          "Consistency checking across citation lists",
+          "Format conversion between different citation styles",
+          "Custom style template creation and application",
+          "Bibliography generation with proper sorting and formatting"
+        ],
+        "advanced_features": [
+          "Intelligent field mapping from various metadata schemas",
+          "Incomplete citation completion using database lookups",
+          "Citation style compliance validation",
+          "Custom institutional style implementation",
+          "Multi-language citation support",
+          "Special case handling for non-standard publication types"
+        ],
+        "technical_specifications": {
+          "supported_styles": [
+            "APA (American Psychological Association) 7th Edition",
+            "MLA (Modern Language Association) 9th Edition", 
+            "Chicago Manual of Style 17th Edition",
+            "Harvard Referencing System",
+            "IEEE Citation Style",
+            "Vancouver Style (ICMJE)",
+            "Custom institutional styles"
+          ],
+          "output_formats": [
+            "Plain text citations",
+            "Rich text with formatting",
+            "LaTeX bibliography entries",
+            "BibTeX format",
+            "EndNote XML",
+            "Zotero RDF"
+          ],
+          "quality_assurance": [
+            "Style compliance checking",
+            "Consistency validation",
+            "Completeness assessment",
+            "Format error detection"
+          ]
+        }
+      },
+      "input_parameters": {
+        "required": [
+          {
+            "name": "publications",
+            "type": "array",
+            "description": "List of publication objects with metadata"
+          },
+          {
+            "name": "citation_style",
+            "type": "string",
+            "description": "Target citation style for formatting",
+            "options": ["APA", "MLA", "Chicago", "Harvard", "IEEE", "Vancouver"]
+          }
+        ],
+        "optional": [
+          {
+            "name": "sort_order",
+            "type": "string",
+            "description": "Sorting method for bibliography",
+            "options": ["alphabetical", "chronological", "appearance"],
+            "default": "alphabetical"
+          },
+          {
+            "name": "include_urls",
+            "type": "boolean",
+            "description": "Whether to include URLs in citations",
+            "default": true
+          },
+          {
+            "name": "date_format",
+            "type": "string",
+            "description": "Date formatting preference",
+            "options": ["ISO", "US", "European"],
+            "default": "style_default"
+          }
+        ]
+      },
+      "output_format": {
+        "structure": "Formatted citation strings with metadata",
+        "components": [
+          "formatted_citation", "style_used", "completeness_score", 
+          "formatting_warnings", "missing_fields", "style_compliance_score"
+        ],
+        "bibliography_format": [
+          "Complete formatted bibliography",
+          "Individual citation entries",
+          "Style compliance report",
+          "Formatting recommendations"
+        ]
+      }
+    },
+    {
+      "agent_id": "orchestration_agent",
+      "name": "Orchestration Agent",
+      "type": "coordination_component",
+      "version": "1.0.0",
+      "description": "Central coordination agent that manages workflow execution, inter-agent communication, and system-wide operations",
+      "primary_role": "System Coordination and Workflow Management",
+      "detailed_description": "The Orchestration Agent functions as the central nervous system of the ARAS platform, coordinating complex workflows that involve multiple specialized agents working in concert. This agent manages the entire research lifecycle from initial discovery through final citation formatting, ensuring optimal resource utilization, error handling, and quality assurance throughout the process. The orchestration agent implements sophisticated workflow management capabilities that allow for both sequential and parallel processing depending on the specific requirements of each research task.",
+      "capabilities": {
+        "core_functions": [
+          "Multi-agent workflow coordination and task distribution",
+          "Resource management and load balancing across agents",
+          "Error handling and recovery coordination",
+          "Progress monitoring and status reporting",
+          "Quality assurance coordination across all system components",
+          "User interface coordination and result aggregation",
+          "System configuration management and optimization"
+        ],
+        "advanced_features": [
+          "Adaptive workflow optimization based on task characteristics",
+          "Intelligent agent selection based on workload and capabilities",
+          "Real-time performance monitoring and bottleneck detection",
+          "Automated error recovery and fallback mechanism coordination",
+          "Dynamic resource allocation based on system demand",
+          "Comprehensive logging and audit trail management"
+        ],
+        "technical_specifications": {
+          "workflow_management": [
+            "Sequential processing for dependent tasks",
+            "Parallel processing for independent operations",
+            "Conditional branching based on intermediate results",
+            "Error recovery and retry mechanisms",
+            "Progress tracking and status updates"
+          ],
+          "communication_protocols": [
+            "Inter-agent message passing",
+            "Event-driven notifications",
+            "Status synchronization",
+            "Error propagation and handling",
+            "Result aggregation and formatting"
+          ],
+          "performance_optimization": [
+            "Load balancing across available resources",
+            "Caching of frequently accessed data",
+            "Batch processing optimization",
+            "Resource pooling and reuse",
+            "Adaptive timeout management"
+          ]
+        }
+      },
+      "input_parameters": {
+        "required": [
+          {
+            "name": "research_request",
+            "type": "object",
+            "description": "Complete research request with all parameters",
+            "structure": "Includes researcher information, search criteria, and output requirements"
+          }
+        ],
+        "optional": [
+          {
+            "name": "workflow_preferences",
+            "type": "object",
+            "description": "User preferences for workflow execution",
+            "fields": ["priority_level", "quality_threshold", "speed_preference"]
+          },
+          {
+            "name": "output_format",
+            "type": "string",
+            "description": "Desired format for final results",
+            "options": ["comprehensive", "summary", "raw_data"]
+          }
+        ]
+      },
+      "output_format": {
+        "structure": "Comprehensive research results with metadata",
+        "components": [
+          "aggregated_results", "quality_assessment", "processing_statistics", 
+          "error_reports", "recommendations", "system_performance_metrics"
+        ]
+      }
+    }
+  ],
+  "system_configuration": {
+    "default_settings": {
+      "max_concurrent_requests": 10,
+      "default_timeout": 30,
+      "quality_threshold": 0.7,
+      "rate_limit_delay": 1.0,
+      "max_retries": 3,
+      "cache_duration": 3600
+    },
+    "customizable_parameters": [
+      "search_depth", "quality_thresholds", "output_formats", 
+      "citation_styles", "verification_levels", "performance_preferences"
+    ]
+  },
+  "integration_capabilities": {
+    "external_systems": [
+      "Reference management software (Zotero, Mendeley, EndNote)",
+      "Academic databases and APIs",
+      "Institutional repositories",
+      "Citation management platforms",
+      "Research information systems"
+    ],
+    "data_formats": [
+      "JSON for structured data exchange",
+      "CSV for spreadsheet compatibility",
+      "BibTeX for LaTeX integration",
+      "RIS for reference manager import",
+      "XML for institutional systems"
+    ]
+  },
+  "quality_assurance": {
+    "validation_mechanisms": [
+      "Multi-source cross-validation",
+      "Confidence scoring for all results",
+      "Error detection and flagging",
+      "Quality metrics calculation",
+      "User feedback integration"
+    ],
+    "performance_monitoring": [
+      "Response time tracking",
+      "Accuracy measurement",
+      "Error rate monitoring",
+      "User satisfaction metrics",
+      "System resource utilization"
+    ]
+  },
+  "deployment_specifications": {
+    "system_requirements": {
+      "python_version": "3.11+",
+      "memory_requirements": "Minimum 4GB RAM for optimal performance",
+      "storage_requirements": "500MB for system files, additional space for cache",
+      "network_requirements": "Stable internet connection for API access"
+    },
+    "dependencies": [
+      "requests>=2.28.0",
+      "beautifulsoup4>=4.11.0",
+      "pandas>=1.5.0",
+      "scholarly>=1.7.0",
+      "crossref-commons>=0.0.7"
+    ],
+    "installation_methods": [
+      "pip install from requirements.txt",
+      "Docker container deployment",
+      "Virtual environment setup",
+      "Cloud platform deployment"
+    ]
+  },
+  "usage_examples": [
+    {
+      "scenario": "Single Researcher Analysis",
+      "description": "Comprehensive analysis of a single researcher's publications",
+      "input_example": {
+        "researcher_name": "Paul Leonardi",
+        "affiliation": "UC Santa Barbara",
+        "research_domain": "organizational technology"
+      },
+      "expected_output": "Complete publication list with verification and formatted citations"
+    },
+    {
+      "scenario": "Batch Researcher Processing",
+      "description": "Analysis of multiple researchers from the same institution",
+      "input_example": {
+        "researchers": [
+          {"name": "Paul Leonardi", "affiliation": "UCSB"},
+          {"name": "Matt Beane", "affiliation": "UCSB"}
+        ]
+      },
+      "expected_output": "Comparative analysis with individual and aggregate metrics"
+    }
+  ],
+  "maintenance_and_updates": {
+    "update_frequency": "Monthly for database connections, quarterly for major features",
+    "monitoring_requirements": "Continuous monitoring of API availability and performance",
+    "backup_procedures": "Regular backup of configuration and cached data",
+    "version_control": "Semantic versioning with backward compatibility"
+  }
+}
+
