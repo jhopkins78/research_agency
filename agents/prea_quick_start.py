@@ -61,16 +61,16 @@ def show_capabilities():
     print("=" * 50)
     
     capabilities = [
-        "📄 Multi-method PDF text extraction (PDFPlumber, PyPDF2, OCR)",
-        "🔍 Advanced reference parsing with pattern recognition",
-        "📊 Multiple output formats (JSON, CSV, Excel, Text, Markdown)",
-        "🎯 Confidence scoring and quality assessment",
-        "📚 Citation style recognition (APA, MLA, Chicago, IEEE)",
-        "🔗 Integration with Academic Research Agent System (ARAS)",
-        "⚡ Batch processing for multiple PDF files",
-        "📈 Processing statistics and error tracking",
-        "🛠️ Configurable extraction parameters",
-        "✅ Comprehensive testing and validation"
+        "Multi-method PDF text extraction (PDFPlumber, PyPDF2, OCR)",
+        "Advanced reference parsing with pattern recognition",
+        "Multiple output formats (JSON, CSV, Excel, Text, Markdown)",
+        "Confidence scoring and quality assessment",
+        "Citation style recognition (APA, MLA, Chicago, IEEE)",
+        "Integration with Academic Research Agent System (ARAS)",
+        "Batch processing for multiple PDF files",
+        "Processing statistics and error tracking",
+        "Configurable extraction parameters",
+        "Comprehensive testing and validation"
     ]
     
     for capability in capabilities:
