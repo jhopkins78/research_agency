@@ -16,7 +16,7 @@ The Academic Research Automation System (ARAS) is an open-source, multi-agent fr
 
 Together, these systems provide a complete solution for academic researchers, librarians, publishers, and institutions to automate citation management, reference extraction, and research validation.
 
-## 🔍 What Problems Does It Solve?
+## What Problems Does It Solve?
 
 Academic research involves numerous manual, time-consuming tasks that are prone to errors:
 
