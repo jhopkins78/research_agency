@@ -7,7 +7,7 @@
 
 > A comprehensive multi-agent system for automating academic research workflows, citation management, and reference extraction.
 
-## 🎯 Overview
+## Overview
 
 The Academic Research Automation System (ARAS) is an open-source, multi-agent framework designed to transform manual academic research workflows into efficient, automated processes. It combines two powerful subsystems:
 
@@ -28,7 +28,7 @@ Academic research involves numerous manual, time-consuming tasks that are prone 
 
 ARAS automates these processes with high accuracy, reducing hours of manual work to seconds while maintaining academic integrity.
 
-## 🤖 Agent Architecture
+## Agent Architecture
 
 ### Academic Research Agent System (ARAS)
 
@@ -104,7 +104,7 @@ PREA employs specialized components for PDF processing:
   - Batch processing
   - ARAS integration
 
-## 🚀 Sample Use Case: Research Paper Citation Analysis
+## Sample Use Case: Research Paper Citation Analysis
 
 A common workflow demonstrates the system's capabilities:
 
@@ -122,7 +122,7 @@ A common workflow demonstrates the system's capabilities:
 
 This process transforms hours of manual work into a 30-second automated workflow with higher accuracy.
 
-## 📋 Setup Instructions
+## Setup Instructions
 
 ### Prerequisites
 
@@ -152,7 +152,7 @@ pip install PyPDF2 pdfplumber pdf2image pytesseract
 pip install openpyxl pandas
 ```
 
-## 💻 Usage
+## Usage
 
 ### Command Line Interface
 
@@ -194,7 +194,7 @@ verification = aras.validate_citations(references)
 publications = aras.research_publications("Jane Smith", "Stanford University")
 ```
 
-## 📊 Expected Results
+## Expected Results
 
 The system generates multiple output files:
 
@@ -204,7 +204,7 @@ The system generates multiple output files:
 - **Text reports**: Human-readable reports with detailed information
 - **Markdown files**: Documentation-friendly format with tables
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -214,10 +214,10 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 🔗 Keywords
+## Keywords
 
 academic research, citation automation, reference extraction, PDF processing, multi-agent system, research tooling, workflow orchestration, academic integrity, data analysis, report generation
