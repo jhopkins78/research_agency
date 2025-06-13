@@ -1,0 +1,4 @@
+reference_number,full_text,authors,title,year,venue,volume,issue,pages,doi,url,isbn,reference_type,citation_style,confidence_score,extraction_notes
+1,"Smith, J. A. (2023). Machine learning applications in academic research. Journal of AI Research, 15(3), 45-62.","Smith, J. A.",Machine learning applications in academic research,2023,Journal of AI Research,15,3,45-62,,,,journal,apa,0.95,
+2,"Johnson, M., & Brown, K. (2022). Data Science Fundamentals. Academic Press.","Johnson, M.; Brown, K.",Data Science Fundamentals,2022,Academic Press,,,,,,,book,apa,0.88,
+3,"Wilson, P. et al. (2024). 'Automated citation analysis', Proceedings of the International Conference on Digital Libraries, pp. 123-135.","Wilson, P.; et al.",Automated citation analysis,2024,Proceedings of the International Conference on Digital Libraries,,,123-135,,,,conference,apa,0.82,

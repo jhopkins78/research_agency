@@ -1,0 +1,26 @@
+PyPDF2>=3.0.0
+pdfplumber>=0.9.0
+pdf2image>=3.1.0
+pytesseract>=0.3.10
+openpyxl>=3.1.0
+pandas>=1.5.0
+
+# Core dependencies (usually included with Python)
+# dataclasses>=0.6  # Python 3.7+
+# typing-extensions>=4.0.0
+
+# Optional dependencies for enhanced functionality
+# Pillow>=9.0.0              # For image processing (pdf2image dependency)
+# numpy>=1.21.0              # For pandas (included with pandas)
+
+# System dependencies (install separately):
+# - Tesseract OCR engine (for pytesseract)
+#   Ubuntu/Debian: sudo apt-get install tesseract-ocr
+#   macOS: brew install tesseract
+#   Windows: Download from https://github.com/UB-Mannheim/tesseract/wiki
+#
+# - Poppler utilities (for pdf2image)
+#   Ubuntu/Debian: sudo apt-get install poppler-utils
+#   macOS: brew install poppler
+#   Windows: Download from https://blog.alivate.com.au/poppler-windows/
+

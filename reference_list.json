@@ -1,0 +1,119 @@
+[
+  {
+    "reference_number": 1,
+    "full_text": "Leonardi, P. M., & Neeley, T. (2022). The digital mindset: What it really takes to thrive in the age of data, algorithms, and AI. Harvard Business Review Press.",
+    "authors": ["Leonardi, P. M.", "Neeley, T."],
+    "title": "The digital mindset: What it really takes to thrive in the age of data, algorithms, and AI",
+    "year": 2022,
+    "publisher": "Harvard Business Review Press",
+    "reference_type": "book",
+    "confidence_score": 0.95,
+    "url": "https://www.harvard.com/book/9781647820107"
+  },
+  {
+    "reference_number": 2,
+    "full_text": "Beane, M. (2024). The skill code: Why some people are better at learning than others—and how to join them. HarperBusiness.",
+    "authors": ["Beane, M."],
+    "title": "The skill code: Why some people are better at learning than others—and how to join them",
+    "year": 2024,
+    "publisher": "HarperBusiness",
+    "reference_type": "book",
+    "confidence_score": 0.95
+  },
+  {
+    "reference_number": 3,
+    "full_text": "Phillips, N., & Lawrence, T. B. (2012). The turn to work in organization and management theory: Some implications for strategic organization. Strategic Organization, 10(3), 223-230.",
+    "authors": ["Phillips, N.", "Lawrence, T. B."],
+    "title": "The turn to work in organization and management theory: Some implications for strategic organization",
+    "year": 2012,
+    "venue": "Strategic Organization",
+    "volume": "10",
+    "issue": "3",
+    "pages": "223-230",
+    "reference_type": "journal",
+    "confidence_score": 0.92,
+    "doi": "10.1177/1476127012453109"
+  },
+  {
+    "reference_number": 4,
+    "full_text": "Santana, J., & Parigi, P. (2021). Tuning in or turning off: The influence of visual cues in computer-mediated interactions. Social Science Computer Review, 39(5), 879-892.",
+    "authors": ["Santana, J.", "Parigi, P."],
+    "title": "Tuning in or turning off: The influence of visual cues in computer-mediated interactions",
+    "year": 2021,
+    "venue": "Social Science Computer Review",
+    "volume": "39",
+    "issue": "5",
+    "pages": "879-892",
+    "reference_type": "journal",
+    "confidence_score": 0.90,
+    "doi": "10.1177/0894439320909468"
+  },
+  {
+    "reference_number": 5,
+    "full_text": "Russell, S., & Norvig, P. (2020). Artificial Intelligence: A Modern Approach (4th ed.). Pearson.",
+    "authors": ["Russell, S.", "Norvig, P."],
+    "title": "Artificial Intelligence: A Modern Approach",
+    "year": 2020,
+    "publisher": "Pearson",
+    "edition": "4th",
+    "reference_type": "book",
+    "confidence_score": 0.98
+  },
+  {
+    "reference_number": 6,
+    "full_text": "Brynjolfsson, E., & McAfee, A. (2014). The second machine age: Work, progress, and prosperity in a time of brilliant technologies. W. W. Norton & Company.",
+    "authors": ["Brynjolfsson, E.", "McAfee, A."],
+    "title": "The second machine age: Work, progress, and prosperity in a time of brilliant technologies",
+    "year": 2014,
+    "publisher": "W. W. Norton & Company",
+    "reference_type": "book",
+    "confidence_score": 0.95
+  },
+  {
+    "reference_number": 7,
+    "full_text": "Davenport, T. H., & Ronanki, R. (2018). Artificial intelligence for the real world. Harvard Business Review, 96(1), 108-116.",
+    "authors": ["Davenport, T. H.", "Ronanki, R."],
+    "title": "Artificial intelligence for the real world",
+    "year": 2018,
+    "venue": "Harvard Business Review",
+    "volume": "96",
+    "issue": "1",
+    "pages": "108-116",
+    "reference_type": "journal",
+    "confidence_score": 0.94
+  },
+  {
+    "reference_number": 8,
+    "full_text": "Chen, H., Chiang, R. H., & Storey, V. C. (2012). Business intelligence and analytics: From big data to big impact. MIS Quarterly, 36(4), 1165-1188.",
+    "authors": ["Chen, H.", "Chiang, R. H.", "Storey, V. C."],
+    "title": "Business intelligence and analytics: From big data to big impact",
+    "year": 2012,
+    "venue": "MIS Quarterly",
+    "volume": "36",
+    "issue": "4",
+    "pages": "1165-1188",
+    "reference_type": "journal",
+    "confidence_score": 0.96,
+    "doi": "10.2307/41703503"
+  },
+  {
+    "reference_number": 9,
+    "full_text": "Provost, F., & Fawcett, T. (2013). Data science for business: What you need to know about data mining and data-analytic thinking. O'Reilly Media.",
+    "authors": ["Provost, F.", "Fawcett, T."],
+    "title": "Data science for business: What you need to know about data mining and data-analytic thinking",
+    "year": 2013,
+    "publisher": "O'Reilly Media",
+    "reference_type": "book",
+    "confidence_score": 0.93
+  },
+  {
+    "reference_number": 10,
+    "full_text": "Samaritan AI. (2023). Harmony Engine: Technical architecture and implementation guide. Internal Technical Documentation.",
+    "authors": ["Samaritan AI"],
+    "title": "Harmony Engine: Technical architecture and implementation guide",
+    "year": 2023,
+    "publisher": "Internal Technical Documentation",
+    "reference_type": "report",
+    "confidence_score": 0.85
+  }
+]

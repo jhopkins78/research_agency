@@ -1,0 +1,7 @@
+,Reference_Number,Confidence_Score,Year,Year
+,count,mean,min,max
+Reference_Type,,,,
+,30,0.0,,
+book,2,1.0,2022.0,2024.0
+journal,5,1.0,2022.0,2024.0
+website,7,1.0,2012.0,2024.0

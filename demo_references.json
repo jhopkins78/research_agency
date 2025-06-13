@@ -1,0 +1,71 @@
+{
+  "extraction_metadata": {
+    "total_references": 3,
+    "extraction_timestamp": "2025-06-08 19:59:45",
+    "format_version": "1.0"
+  },
+  "references": [
+    {
+      "reference_number": 1,
+      "full_text": "Smith, J. A. (2023). Machine learning applications in academic research. Journal of AI Research, 15(3), 45-62.",
+      "authors": [
+        "Smith, J. A."
+      ],
+      "title": "Machine learning applications in academic research",
+      "year": 2023,
+      "venue": "Journal of AI Research",
+      "volume": "15",
+      "issue": "3",
+      "pages": "45-62",
+      "doi": "",
+      "url": "",
+      "isbn": "",
+      "reference_type": "journal",
+      "citation_style": "apa",
+      "confidence_score": 0.95,
+      "extraction_notes": ""
+    },
+    {
+      "reference_number": 2,
+      "full_text": "Johnson, M., & Brown, K. (2022). Data Science Fundamentals. Academic Press.",
+      "authors": [
+        "Johnson, M.",
+        "Brown, K."
+      ],
+      "title": "Data Science Fundamentals",
+      "year": 2022,
+      "venue": "Academic Press",
+      "volume": "",
+      "issue": "",
+      "pages": "",
+      "doi": "",
+      "url": "",
+      "isbn": "",
+      "reference_type": "book",
+      "citation_style": "apa",
+      "confidence_score": 0.88,
+      "extraction_notes": ""
+    },
+    {
+      "reference_number": 3,
+      "full_text": "Wilson, P. et al. (2024). 'Automated citation analysis', Proceedings of the International Conference on Digital Libraries, pp. 123-135.",
+      "authors": [
+        "Wilson, P.",
+        "et al."
+      ],
+      "title": "Automated citation analysis",
+      "year": 2024,
+      "venue": "Proceedings of the International Conference on Digital Libraries",
+      "volume": "",
+      "issue": "",
+      "pages": "123-135",
+      "doi": "",
+      "url": "",
+      "isbn": "",
+      "reference_type": "conference",
+      "citation_style": "apa",
+      "confidence_score": 0.82,
+      "extraction_notes": ""
+    }
+  ]
+}

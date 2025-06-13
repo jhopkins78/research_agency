@@ -1,0 +1,138 @@
+# Academic Research Automation System Configuration
+
+# Input/Output Paths
+paths:
+  # Default input directory for research artifacts
+  input_dir: "input"
+  # Default output directory for generated files
+  output_dir: "output"
+  # Directory for log files
+  logs_dir: "logs"
+  # Directory for temporary files
+  temp_dir: "temp"
+  # Directory for report templates
+  templates_dir: "templates"
+
+# Logging Configuration
+logging:
+  # Logging level (DEBUG, INFO, WARNING, ERROR, CRITICAL)
+  level: "INFO"
+  # Whether to log to console
+  console: true
+  # Whether to log to file
+  file: true
+  # Log file name
+  filename: "research_agent.log"
+  # Log format
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  # Maximum log file size in bytes (5MB)
+  max_size: 5242880
+  # Number of backup log files to keep
+  backup_count: 3
+
+# Agent Activation Flags
+agents:
+  # Enable/disable file router agent
+  file_router_agent: true
+  # Enable/disable insight agent
+  insight_agent: true
+  # Enable/disable report agent
+  report_agent: true
+  # Enable/disable ARAS integration
+  aras_integration: true
+  # Enable/disable PREA integration
+  prea_integration: true
+
+# Output Format Preferences
+output:
+  # Default report format (md, pdf, docx)
+  report_format: "md"
+  # Whether to generate PDF output
+  generate_pdf: true
+  # Whether to generate DOCX output
+  generate_docx: true
+  # Whether to generate Excel spreadsheets
+  generate_excel: true
+  # Whether to generate visualizations
+  generate_visualizations: true
+  # Default citation style (APA, MLA, Chicago, IEEE)
+  citation_style: "APA"
+
+# Performance Settings
+performance:
+  # Number of parallel processes for batch operations
+  parallel_processes: 4
+  # Timeout for external API calls in seconds
+  api_timeout: 30
+  # Maximum file size for processing in bytes (50MB)
+  max_file_size: 52428800
+  # Cache duration in seconds
+  cache_duration: 3600
+
+# API Integration Settings
+api:
+  # Enable/disable API rate limiting
+  rate_limiting: true
+  # Maximum requests per minute
+  rate_limit: 60
+  # API retry attempts
+  retry_attempts: 3
+  # API retry delay in seconds
+  retry_delay: 5
+
+# Visualization Settings
+visualizations:
+  # Default visualization format (png, svg, pdf)
+  format: "png"
+  # Default DPI for raster images
+  dpi: 300
+  # Default figure size (width, height) in inches
+  figure_size: [10, 6]
+  # Default color scheme
+  color_scheme: "viridis"
+  # Whether to include visualization titles
+  include_titles: true
+
+# Report Generation Settings
+report:
+  # Default report template
+  template: "academic"
+  # Maximum word count for executive summary
+  executive_summary_max_words: 250
+  # Whether to include table of contents
+  include_toc: true
+  # Whether to include list of figures
+  include_lof: true
+  # Whether to include list of tables
+  include_lot: true
+  # Whether to include appendices
+  include_appendices: true
+  # Default report sections
+  sections:
+    - "executive_summary"
+    - "introduction"
+    - "methodology"
+    - "analysis"
+    - "results"
+    - "discussion"
+    - "conclusion"
+    - "references"
+    - "appendices"
+
+# Reference Analysis Settings
+reference_analysis:
+  # Minimum confidence threshold for reference extraction
+  min_confidence: 0.7
+  # Whether to verify DOIs
+  verify_doi: true
+  # Whether to check for broken URLs
+  check_urls: true
+  # Whether to validate publisher information
+  validate_publisher: true
+  # Whether to check for citation consistency
+  check_consistency: true
+  # Quality threshold categories
+  quality_thresholds:
+    high: 0.8
+    medium: 0.6
+    low: 0.4
